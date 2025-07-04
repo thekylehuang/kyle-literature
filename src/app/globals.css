@@ -20,3 +20,8 @@ body {
 .mono {
   font-family: var(--font-mono);
 }
+
+.glass-edge {
+  border-image-source: linear-gradient(91deg, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,0.5) 100%);
+  border-image-slice: 1;
+}
