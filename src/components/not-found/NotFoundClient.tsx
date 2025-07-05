@@ -1,24 +1,22 @@
 "use client"
 
-import { Canvas } from '@react-three/fiber';
-import { Environment, Stats } from '@react-three/drei';
-import Game from '@/components/not-found/Game';
-import { Suspense } from 'react';
+import { Canvas } from "@react-three/fiber";
+import { useGLTF, Environment } from "@react-three/drei";
+import Model from "@/components/not-found/Model";
+
+useGLTF.preload('/models/not-found/404.glb')
 
 const NotFoundClient = () => {
-  return (
+  return(
     <div className='flex items-center justify-center w-full h-[calc(100vh-80px)] mt-20'>
-      <div id="canvas-container" className='w-11/12 h-11/12 rounded-2xl overflow-hidden'>
+      <div id="canvas-container" className='w-full h-full'>
         <Canvas>
-          <Stats />
-          <Environment files="/images/not-found/blackhole-skybox.exr" background />
-          <Suspense fallback={null}>
-            <Game />
-          </Suspense>
+          <Environment preset="studio" environmentIntensity={0.5}/>
+          <Model />
         </Canvas> 
       </div>
     </div>
-  )
+  );
 };
 
 export default NotFoundClient;

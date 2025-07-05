@@ -6,7 +6,7 @@ import { BriefcaseBusiness, FileText, LibraryBig, Mail, Search } from "lucide-re
 const Navbar = () => {
 
   return(
-    <nav className="w-full h-20 fixed top-0 left-0 flex justify-center items-center bg-[#e8e4d9] border-b-[1.5px] border-b-[#22211f]">
+    <nav className="w-full h-20 fixed top-0 left-0 flex justify-center items-center bg-[#e8e4d9] border-b-[1.5px] border-b-[#cec5b9]">
       <div className="w-full max-w-5xl h-full flex justify-between items-center px-4">
         <div className="h-full flex items-center">
           <Link href="/" className="text-5xl font-bold">Kyle.</Link>
