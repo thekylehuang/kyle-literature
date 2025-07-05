@@ -1,11 +1,16 @@
-import Link from 'next/link'
- 
-export default function NotFound() {
+import { Metadata } from "next"
+import NotFoundClient from "@/components/not-found/NotFoundClient";
+
+export const metadata: Metadata = {
+  title: '404: Not Found'
+};
+
+const NotFound = () => {
   return (
-    <div className='mt-24'>
-      <h2>Not Found</h2>
-      <p>Could not find requested resource</p>
-      <Link href="/">Return Home</Link>
-    </div>
+    <>
+      <NotFoundClient />
+    </>
   )
-}
+};
+
+export default NotFound;
