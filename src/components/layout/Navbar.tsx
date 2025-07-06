@@ -14,7 +14,7 @@ const Navbar = () => {
   }
   return(
     <>
-      <nav className="w-full h-14 md:h-18 lg:h-20 fixed top-0 left-0 flex justify-center items-center bg-[#e8e4d9] border-b-[1.5px] border-b-[#cec5b9] z-50">
+      <nav className="w-full h-14 md:h-18 lg:h-20 fixed top-0 left-0 flex justify-center items-center bg-[#e8e4d9] z-50">
         <div className="w-full max-w-5xl h-full flex justify-between items-center px-4">
           <div className="h-full flex items-center">
             <Link href="/" className="text-4xl md:text-5xl lg:text-5xl font-bold">Kyle.</Link>
