@@ -14,6 +14,9 @@ const NotFoundClient = () => {
           <Environment preset="studio" environmentIntensity={0.5}/>
           <Model />
         </Canvas> 
+        <div className="w-full h-[1000px] bg-red-500">
+          <h1>Hi</h1>
+        </div>
       </div>
     </div>
   );
