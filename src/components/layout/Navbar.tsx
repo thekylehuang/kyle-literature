@@ -61,7 +61,7 @@ const Navbar = () => {
       <AnimatePresence>
         {openModal && (
           <motion.div
-            className="fixed md:hidden top-0 left-0 w-full h-full backdrop-blur-sm z-20"
+            className="fixed lg:hidden top-0 left-0 w-full h-full backdrop-blur-sm z-20"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -131,7 +131,6 @@ const Navbar = () => {
             </Link>
           </Sheet.Content>
         </Sheet.Container>
-        <Sheet.Backdrop />
       </Sheet>
     </>
   );
