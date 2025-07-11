@@ -1,10 +1,11 @@
-import { Crimson_Pro, Geist_Mono } from "next/font/google";
+import { Libre_Baskerville, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 
-const crimsonPro = Crimson_Pro({
-  variable: "--font-crimson-pro",
+const libreBaskerville = Libre_Baskerville({
+  variable: "--font-serif",
   subsets: ["latin"],
+  weight: ["400", "700"]
 });
 
 const geistMono = Geist_Mono({
@@ -20,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${crimsonPro.className} ${geistMono.variable}`}
+        className={`${libreBaskerville.className} ${geistMono.variable}`}
       >
         <Navbar />
         <main>{children}</main>
