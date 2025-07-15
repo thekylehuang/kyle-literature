@@ -14,15 +14,15 @@ const Navbar = () => {
   }
   return(
     <>
-      <nav className="w-full h-18 fixed top-0 left-0 flex justify-center items-center bg-[#e8e4d9] z-50 border-b-[1px] border-b-black">
+      <nav className="w-full h-18 fixed top-0 left-0 flex justify-center items-center bg-[#f9f3ee] z-50 border-b-[1px] border-b-black">
         <div className="w-full max-w-5xl h-full flex justify-between items-center px-6">
           <div className="h-full flex items-center">
             <Link href="/" className="text-4xl font-bold">Kyle.</Link>
           </div>
           <div className="h-full w-xl absolute left-1/2 transform -translate-x-1/2 hidden lg:flex items-center">
-            <div className="rounded-full p-px glass-edge absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+            <div className="rounded-full p-[1.5px] glass-edge absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
               <div 
-              className="flex h-12 rounded-full mono justify-around items-center text-[#635f56] px-2 bg-[#e2ded3] gap-1 glass-shadow"
+              className="flex h-12 rounded-full mono justify-around items-center text-[#635f56] px-2 bg-[#f4eedd] gap-1 glass-shadow"
               >
                 <Link href="/work" className="mono font-semibold flex items-center gap-2 px-4 py-1.5 rounded-full hover:text-[#343331] transition-colors">
                   <BriefcaseBusiness />
@@ -44,8 +44,8 @@ const Navbar = () => {
             </div>
           </div>
           <div className="h-full hidden lg:flex items-center justify-center font-semibold mono text-md">
-            <div className="rounded-full p-px glass-edge">
-              <button className="cursor-pointer py-2.5 px-4 flex gap-2 rounded-full text-[#635f56] bg-[#e2ded3] glass-shadow">
+            <div className="rounded-full p-[1.5px] glass-edge">
+              <button className="cursor-pointer py-2.5 px-4 flex gap-2 rounded-full text-[#635f56] bg-[#f4eedd] glass-shadow">
                 <Search size={20} className="relative top-px"/>
                 Search
               </button>

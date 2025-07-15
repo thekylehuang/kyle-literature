@@ -3,7 +3,7 @@
 const HomeClient = () => {
   return(
     <>
-      <div className="h-screen w-full bg-[#e8e4d9]">
+      <div className="h-screen w-full">
 
       </div>
     </>
