@@ -2,7 +2,7 @@
 "use client"
 
 import Link from "next/link";
-import { BriefcaseBusiness, FileText, LibraryBig, Mail, Search, Menu } from "lucide-react";
+import { Search, Menu } from "lucide-react";
 import { Sheet } from "react-modal-sheet";
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
@@ -22,22 +22,18 @@ const Navbar = () => {
           <div className="h-full w-xl absolute left-1/2 transform -translate-x-1/2 hidden lg:flex items-center">
             <div className="rounded-full p-[1.5px] glass-edge absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
               <div 
-              className="flex rounded-full sans-serif justify-around items-center text-[#f7fcfc] px-3 py-1 bg-[#2e4c46] gap-0.5 glass-shadow text-sm"
+              className="flex rounded-full sans-serif justify-around items-center text-[#f7fcfc] px-3 py-1 bg-[#80A482] gap-0.5 glass-shadow text-sm"
               >
                 <Link href="/work" className="sans-serif font-medium flex items-center gap-2 px-2.5 py-1.5 rounded-full hover:text-[#d3e0dd] transition-colors">
-                  <BriefcaseBusiness size={20} strokeWidth={1.5} absoluteStrokeWidth={true} />
                   Work
                 </Link>
                 <Link href="/cv" className="sans-serif font-medium flex items-center gap-2 px-2.5 py-1.5 rounded-full hover:text-[#d3e0dd] transition-colors">
-                  <FileText size={20} strokeWidth={1.5} absoluteStrokeWidth={true} />
                   CV
                 </Link>
                 <Link href="/literature" className="sans-serif font-medium flex items-center gap-2 px-2.5 py-1.5 rounded-full hover:text-[#d3e0dd] transition-colors">
-                  <LibraryBig size={20} strokeWidth={1.5} absoluteStrokeWidth={true} />
                   Literature
                 </Link>
                 <Link href="/contact" className="sans-serif font-medium flex items-center gap-2 px-2.5 py-1.5 rounded-full hover:text-[#d3e0dd] transition-colors">
-                  <Mail size={20} strokeWidth={1.5} absoluteStrokeWidth={true} />
                   Contact
                 </Link>
               </div>
